@@ -30,16 +30,20 @@
       <div id="question-area" class="hidden">
         <div class="nav-buttons nav-buttons-top">
           <button id="prev-btn" class="secondary small-nav">Previous</button>
-          <button id="next-btn" class="secondary small-nav">Next</button>
         </div>
 
-        <p class="prompt">Choose the correct article:</p>
-        <h2 id="word" aria-live="polite">-</h2>
+        <div class="question-content">
+          <p class="prompt">Choose the correct article:</p>
+          <h2 id="word" aria-live="polite">-</h2>
+        </div>
 
-        <div class="article-buttons">
-          <button class="article-btn" data-article="der">der</button>
-          <button class="article-btn" data-article="die">die</button>
-          <button class="article-btn" data-article="das">das</button>
+        <div class="answer-zone">
+          <div class="control-grid">
+            <button id="next-btn" class="secondary grid-btn">Next</button>
+            <button class="article-btn" data-article="der">der</button>
+            <button class="article-btn" data-article="die">die</button>
+            <button class="article-btn" data-article="das">das</button>
+          </div>
         </div>
 
         <p id="feedback" class="feedback" aria-live="polite"></p>
@@ -47,6 +51,8 @@
     </section>
   </main>
 
+  <script src="words.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
+
