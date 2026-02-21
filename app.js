@@ -1,15 +1,3 @@
-const wordsTable = [
-  { word: "Baum", article: "der" },
-  { word: "Tisch", article: "der" },
-  { word: "Stuhl", article: "der" },
-  { word: "Lampe", article: "die" },
-  { word: "Blume", article: "die" },
-  { word: "Uhr", article: "die" },
-  { word: "Haus", article: "das" },
-  { word: "Buch", article: "das" },
-  { word: "Fenster", article: "das" }
-];
-
 const scoreEl = document.getElementById("score");
 const roundEl = document.getElementById("round");
 const wordEl = document.getElementById("word");
@@ -133,3 +121,4 @@ prevBtn.addEventListener("click", goPrev);
 articleButtons.forEach((btn) => {
   btn.addEventListener("click", () => handleAnswer(btn.dataset.article));
 });
+
