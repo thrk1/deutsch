@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Der Die Das Trainer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>Der Die Das</h1>
+      <p>Practice German articles on your iPhone.</p>
+    </header>
+
+    <section class="session-card">
+      <div class="stats">
+        <div>
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span class="label">Round</span>
+          <strong id="round">0 / 0</strong>
+        </div>
+      </div>
+
+      <button id="start-btn" class="primary">Start Session</button>
+
+      <div id="question-area" class="hidden">
+        <div class="nav-buttons nav-buttons-top">
+          <button id="prev-btn" class="secondary small-nav">Previous</button>
+          <button id="next-btn" class="secondary small-nav">Next</button>
+        </div>
+
+        <p class="prompt">Choose the correct article:</p>
+        <h2 id="word" aria-live="polite">-</h2>
+
+        <div class="article-buttons">
+          <button class="article-btn" data-article="der">der</button>
+          <button class="article-btn" data-article="die">die</button>
+          <button class="article-btn" data-article="das">das</button>
+        </div>
+
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
